@@ -11,7 +11,6 @@
 
     <properties>
         <!-- Common libs -->
-        <spring_version>3.2.16.RELEASE</spring_version>
         <webx_version>3.1.6</webx_version>
     </properties>
 
@@ -23,16 +22,6 @@
             <groupId>com.alibaba.citrus</groupId>
             <artifactId>citrus-webx-all</artifactId>
             <version>${webx_version}</version>
-        </dependency>
-        <!-- ================================================= -->
-        <!-- Spring框架 -->
-        <!-- ================================================= -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-framework-bom</artifactId>
-            <version>${spring_version}</version>
-            <type>pom</type>
-            <scope>import</scope>
         </dependency>
         <!-- ================================================= -->
         <!-- 日志及相关依赖（用slf4j+logback代替jcl+log4j） -->
