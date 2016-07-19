@@ -17,7 +17,7 @@
     <services:webx-configuration />
 
     <!-- 将beans暴露给模板。 -->
-    <services:pull xmlns="http://www.alibaba.com/schema/services/pull/factories">
+    <services:pull>
         <pull-factories:utils />
         <pull-factories:rundata-tool />
         <pull-factories:csrfToken />

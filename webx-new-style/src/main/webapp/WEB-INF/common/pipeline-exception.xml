@@ -12,8 +12,7 @@
                  http://www.springframework.org/schema/beans http://localhost:8080/schema/www.springframework.org/schema/beans/spring-beans.xsd
              ">
 
-    <services:pipeline id="exceptionPipeline"
-                       xmlns="http://www.alibaba.com/schema/services/pipeline/valves">
+    <services:pipeline id="exceptionPipeline">
 
         <!-- 初始化turbine rundata，并在pipelineContext中设置可能会用到的对象(如rundata、utils)，以便valve取得。 -->
         <pl-valves:prepareForTurbine />

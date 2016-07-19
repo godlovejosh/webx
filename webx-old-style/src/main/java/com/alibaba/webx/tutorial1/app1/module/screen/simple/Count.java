@@ -1,30 +1,10 @@
-/*
- * Copyright (c) 2002-2012 Alibaba Group Holding Limited.
- * All rights reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.alibaba.webx.tutorial1.app1.module.screen.simple;
-
-import static com.alibaba.citrus.util.StringEscapeUtil.*;
-
-import java.io.PrintWriter;
-import javax.servlet.http.HttpServletResponse;
 
 import com.alibaba.citrus.service.requestcontext.buffered.BufferedRequestContext;
 import com.alibaba.citrus.turbine.dataresolver.Param;
 import org.springframework.beans.factory.annotation.Autowired;
+import javax.servlet.http.HttpServletResponse;
+import java.io.PrintWriter;
 
 /**
  * 在浏览器上显示计数。
@@ -34,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * 此程序展示了一种技术，能让页面一边生成、一边展示给用户。虽然页面还没有完全生成，但用户已经能够看到部分页面。
  * 这不仅改善了用户的体验，也使浏览器处理页面、下载、服务器生成页面三者实现了并发，从而加快了显示页面的总时间。
  *
- * @author Michael Zhou
+ * @author Wuxing
  */
 public class Count {
     @Autowired
